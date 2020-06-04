@@ -227,6 +227,60 @@
         </div>
     </div>
 
+    <h3 id="projects">Projects</h3>
+    <h2 id="project1">Check Out Some of My Works.</h2>
+    <img class="mySlides" src="./appetizer-close-up-cuisine-delicious-434258.jpg" alt="">
+    <img class="mySlides" src="./sliced-tomato-and-avocado-on-white-plate-1143754.jpg" alt="">
+    <img class="mySlides" src="./vegetable-salad-on-white-plate-2862154.jpg" alt="">
+    <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+
+
+
+    <div class="contact-me">
+        <h1>Login</h1>
+        <div class="textbox">
+            <input type="text" placeholder="Name" name="" value="">
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="Password" name="" value="">
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Subject" name="" value="">
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Message" name="" value="">
+        </div>
+
+
+        <input class="btn" type="button" name="" value="Submit">
+
+    </div>
+
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
 
 
 
