@@ -735,7 +735,7 @@ span#one:hover {
     /* border: 2px solid white; */
     color: white;
     padding: 5px;
-    background-color: orange;
+    background-color: orangered;
     font-size: 1.2rem;
     cursor: pointer;
     margin: 12px 0;
